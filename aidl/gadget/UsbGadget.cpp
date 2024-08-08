@@ -117,41 +117,41 @@ static Status validateAndSetVidPid(int64_t functions) {
 
     switch (functions) {
         case GadgetFunction::MTP:
-            vid = "0x0E8D";
-            pid = "0x2008";
+            vid = "0x2717";
+            pid = "0xFF40";
             saving = "2";
             break;
         case GadgetFunction::ADB | GadgetFunction::MTP:
-            vid = "0x0E8D";
-            pid = "0x201D";
+            vid = "0x2717";
+            pid = "0xFF48";
             break;
         case GadgetFunction::RNDIS:
-            vid = "0x0E8D";
-            pid = "0x2004";
+            vid = "0x2717";
+            pid = "0xFF80";
             break;
         case GadgetFunction::ADB | GadgetFunction::RNDIS:
-            vid = "0x0E8D";
-            pid = "0x2005";
+            vid = "0x2717";
+            pid = "0xFF88";
             break;
         case GadgetFunction::PTP:
-            vid = "0x0E8D";
-            pid = "0x200B";
+            vid = "0x2717";
+            pid = "0xFF10";
             saving = "2";
             break;
         case GadgetFunction::ADB | GadgetFunction::PTP:
-            vid = "0x0E8D";
-            pid = "0x200C";
+            vid = "0x2717";
+            pid = "0xFF18";
             break;
         case GadgetFunction::ADB:
-            vid = "0x0E8D";
-            pid = "0x201C";
+            vid = "0x2717";
+            pid = "0xFF08";
             break;
         case GadgetFunction::MIDI:
-            vid = "0x0E8D";
+            vid = "0x2717";
             pid = "0x2046";
             break;
         case GadgetFunction::ADB | GadgetFunction::MIDI:
-            vid = "0x0E8D";
+            vid = "0x2717";
             pid = "0x2048";
             break;
         case GadgetFunction::ACCESSORY:
@@ -179,11 +179,11 @@ static Status validateAndSetVidPid(int64_t functions) {
             pid = "0x2d05";
             break;
         case GadgetFunction::NCM:
-            vid = "0x0E8D";
+            vid = "0x2717";
             pid = "0x2067";
             break;
         case GadgetFunction::ADB | GadgetFunction::NCM:
-            vid = "0x0E8D";
+            vid = "0x2717";
             pid = "0x206A";
             break;
         case GadgetFunction::UVC:
